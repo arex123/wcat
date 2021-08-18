@@ -45,7 +45,12 @@ function addSequenceTne1(content){
     }
     return contentArr;
 }
-
+function removeExtline(content){
+    let contentArr = content.split("/n");
+    for(let i=0;i<contentArr.length;i++){
+        if(contentA
+    }
+}
 
 
 
@@ -104,6 +109,14 @@ function addSequenceTne1(content){
 //                 fileData = removeAll(fileData,secondaryArgument);
 //             }
 //         }
+            // if(flag=="-s"){
+            //     let data= addsequence(filedata);
+            //     console.log(data);
+            // }
+            // if(flag=="-sn"){
+            //     let data=addsequenceTnel(filedata);
+            //     console.log(data);
+            // }
 //     }
 //     console.log(fileData);
 // }
