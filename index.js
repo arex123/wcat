@@ -45,11 +45,23 @@ function addSequenceTne1(content){
     }
     return contentArr;
 }
-function removeExtline(content){
+function removeExtaline(content){
     let contentArr = content.split("/n");
+    let data=[];
     for(let i=0;i<contentArr.length;i++){
-        if(contentA
+        if(contentArr[i]=="" && contentArr[i-1]==""){
+            contentArr[i]=null;
+        }
+        if(contentArr[i]=="" && contentArr[i-1]==null){
+            contentArr[i]=null;
+        }
     }
+    for(let i=0;i<contentArr.length;i++){
+        if(contentArr[i]!=null){
+            data.push(contentArr[i]);
+        }
+    }
+    return data;
 }
 
 
